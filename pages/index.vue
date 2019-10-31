@@ -1,6 +1,7 @@
 <template>
   <div class="home-page p-0">
     <Welcome />
+    <About />
   </div>
 </template>
 
@@ -8,7 +9,8 @@
 export default {
   name: 'HomePage',
   components: {
-    Welcome: () => import('~/components/Welcome')
+    Welcome: () => import('~/components/Welcome'),
+    About: () => import('~/components/About')
   }
 }
 </script>

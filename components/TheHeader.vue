@@ -24,24 +24,30 @@
         <ul
           class="nav d-flex w-100 justify-content-between align-content-center text-uppercase p-3"
         >
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About Us</a>
+          <li class="nav-item d-none d-lg-block">
+            <a href="#home" class="nav-link" @click.prevent="">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="#rooms" class="nav-link">Our Rooms</a>
+          <li class="nav-item d-none d-lg-block">
+            <a href="#about" class="nav-link" @click.prevent="">About Us</a>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a href="#rooms" class="nav-link" @click.prevent="">Our Rooms</a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link p-0"
               ><img src="/images/png/transcorp-1.png" alt="transcorp logo"
             /></a>
           </li>
-          <li class="nav-item">
-            <a href="#reservations" class="nav-link">Reservation</a>
+          <li class="nav-item d-none d-lg-block">
+            <a href="#reservations" class="nav-link" @click.prevent=""
+              >Reservation</a
+            >
           </li>
-          <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
+          <li class="nav-item d-none d-lg-block">
+            <a href="#blog" class="nav-link" @click.prevent="">Blog</a>
+          </li>
+          <li class="nav-item d-none ">
+            <a href="#contact" class="nav-link" @click.prevent="">Contact</a>
           </li>
         </ul>
       </nav>
@@ -51,7 +57,8 @@
 
 <script>
 export default {
-  name: 'TheHeader'
+  name: 'TheHeader',
+  methods: {}
 }
 </script>
 

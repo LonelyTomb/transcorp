@@ -1,5 +1,5 @@
 <template>
-  <section class="w-100 welcome-component min-vh-100">
+  <section class="w-100 welcome-component min-vh-100 mb-5" id="home">
     <div class="position-relative">
       <video
         id="welcome-video"
@@ -14,7 +14,7 @@
       >
         <div class="welcome-text">
           <p class="text-capitalize">Welcome To</p>
-          <p>Transcorp Hotel</p>
+          <h1>Transcorp Hotel</h1>
           <p>A place to experience and enjoy the life</p>
           <img
             src="/images/png/ic-play-circle-outline.png"
@@ -23,59 +23,59 @@
           />
         </div>
       </div>
-      <div class="checkin-block position-absolute w-100">
-        <div class="w-75 mx-auto shadow-lg">
-          <div class="row d-flex flex-column flex-lg-row">
-            <div class="col-auto col-lg-3 checkin-box p-4">
-              <p class="checkin-user-type my-0">CHECK-IN</p>
-              <div class="d-flex justify-content-between align-items-end">
-                <p class="my-0 px-0">
-                  <span class="day px-2">24</span>
-                  <span class="month">/JUNE</span>
-                </p>
-                <span class="p-2">
-                  <img
-                    src="/images/svg/arrow-down-sign-to-navigate.svg"
-                    class="img-fluid down-arrow"
-                    alt=""
-                /></span>
-              </div>
+    </div>
+    <div class="checkin-block position-relative w-100">
+      <div class="w-75 mx-auto shadow-lg">
+        <div class="row d-flex flex-column flex-lg-row">
+          <div class="col-auto col-lg-3 checkin-box p-4">
+            <p class="checkin-user-type my-0">CHECK-IN</p>
+            <div class="d-flex justify-content-between align-items-end">
+              <p class="my-0 px-0">
+                <span class="day px-2">24</span>
+                <span class="month">/JUNE</span>
+              </p>
+              <span class="p-2">
+                <img
+                  src="/images/svg/arrow-down-sign-to-navigate.svg"
+                  class="img-fluid down-arrow"
+                  alt=""
+              /></span>
             </div>
-            <div class="col-auto col-lg-3 checkout-box p-4">
-              <p class="checkin-user-type my-0">CHECK-OUT</p>
-              <div class="d-flex justify-content-between align-items-end">
-                <p class="my-0 px-0">
-                  <span class="day px-2">24</span>
-                  <span class="month">/JUNE</span>
-                </p>
-                <span class="p-2">
-                  <img
-                    src="/images/svg/arrow-down-sign-to-navigate.svg"
-                    class="img-fluid down-arrow"
-                    alt=""
-                /></span>
-              </div>
+          </div>
+          <div class="col-auto col-lg-3 checkout-box p-4">
+            <p class="checkin-user-type my-0">CHECK-OUT</p>
+            <div class="d-flex justify-content-between align-items-end">
+              <p class="my-0 px-0">
+                <span class="day px-2">24</span>
+                <span class="month">/JUNE</span>
+              </p>
+              <span class="p-2">
+                <img
+                  src="/images/svg/arrow-down-sign-to-navigate.svg"
+                  class="img-fluid down-arrow"
+                  alt=""
+              /></span>
             </div>
-            <div class="col-auto col-lg-3 guest-box p-4">
-              <p class="checkin-user-type my-0">GUEST</p>
-              <div class="d-flex justify-content-between align-items-end">
-                <p class="my-0 px-0">
-                  <span class="day px-2">03</span>
-                </p>
-                <span class="p-2">
-                  <img
-                    src="/images/svg/arrow-down-sign-to-navigate.svg"
-                    class="img-fluid down-arrow"
-                    alt=""
-                /></span>
-              </div>
+          </div>
+          <div class="col-auto col-lg-3 guest-box p-4">
+            <p class="checkin-user-type my-0">GUEST</p>
+            <div class="d-flex justify-content-between align-items-end">
+              <p class="my-0 px-0">
+                <span class="day px-2">03</span>
+              </p>
+              <span class="p-2">
+                <img
+                  src="/images/svg/arrow-down-sign-to-navigate.svg"
+                  class="img-fluid down-arrow"
+                  alt=""
+              /></span>
             </div>
-            <div class="col-auto col-lg-3 promo-box py-4">
-              <div class="container d-flex flex-column justify-content-center">
-                <div class="text-center py-2">
-                  <p>Have a promotional code ?</p>
-                  <button class="btn btn-block p-2">CHECK AVAILABILITY</button>
-                </div>
+          </div>
+          <div class="col-auto col-lg-3 promo-box py-4">
+            <div class="container d-flex flex-column justify-content-center">
+              <div class="text-center py-2">
+                <p>Have a promotional code ?</p>
+                <button class="btn btn-block p-2">CHECK AVAILABILITY</button>
               </div>
             </div>
           </div>
@@ -112,6 +112,13 @@ export default {
         rgba(67, 67, 67, 0.2)
       );
     }
+    h1 {
+      font: {
+        size: 3.35rem;
+        family: Georgia;
+      }
+      letter-spacing: 3.06px;
+    }
     p {
       &:nth-child(1) {
         letter-spacing: 4.94px;
@@ -119,13 +126,6 @@ export default {
           size: 0.975em;
           weight: bold;
         }
-      }
-      &:nth-child(2) {
-        font: {
-          size: 3.35rem;
-          family: Georgia;
-        }
-        letter-spacing: 3.06px;
       }
       &:nth-child(3) {
         letter-spacing: 0.82px;
@@ -137,7 +137,7 @@ export default {
     }
   }
   .checkin-block {
-    bottom: -80px;
+    top: -70px;
     z-index: -1;
     .row {
       background-color: #ffffff;
